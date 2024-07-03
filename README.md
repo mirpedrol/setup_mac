@@ -21,5 +21,34 @@ git clone https://github.com/mirpedrol/setup_mac.gi
 
 ## Terminal
 
-Customise the terminal by running: `setup_terminal.sh`.
+Customise the terminal by clonning the dark theme.:
 
+```bash
+git clone https://github.com/nathanbuchar/atom-one-dark-terminal.git
+```
+
+Open the terminal and go to `Terminal>Settings>Profiles`.
+Drag and drop the file `/Users/jmir/Work/atom-one-dark-terminal/scheme/terminal/One Dark.terminal` to the profiles list.
+Select the `One Dark` theme and click `Default`.
+
+Customise the theme with the following:
+
+**Text Tab**
+**Font:** Menlo Regular 13 pt
+**Text:** Deselect Use Bold Fonts and Allow Blinking Text
+
+**Window Tab**
+**Title:** Deselect Active process name, Arguments, Dimensions
+
+**Tab Tab**
+**Title:** Deselect Path, Active process name, Arguments, Show activity indicator
+
+**Shell Tab**
+**Startup:** Select Run command: and add ‘clear’ to the textbox, select Run inside shell
+
+**Keyboard Tab**
+Select Use Option as Meta key
+
+---
+
+Run `setup_terminal.sh` to configure the terminal.
