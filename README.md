@@ -49,6 +49,18 @@ Customise the theme with the following:
 **Keyboard Tab**
 Select Use Option as Meta key
 
+## Download the recommended font
+
+Download the files, click them and install
+
+https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
+https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf
+https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
+https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
+
 ---
 
 Run `setup_terminal.sh` to configure the terminal.
+
+This will install `miniconda`, `oh-my-zsh`, `fish` shell, `powerlevel10k`, and copy the `.zshrc` file.
+It will restart the terminal and configure p10k which has to be set interactively.

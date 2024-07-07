@@ -19,3 +19,21 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 # Install fish shell
 
 brew install fish
+
+# Install powerlevel10k
+
+# Install p10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/Installed/powerlevel10k
+echo 'source ~/Installed/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+
+# Copy .zshrc file and restart terminal
+
+cd ~/Work/setup_map
+cp files/.zshrc ~/.zshrc
+
+exec zsh
+p10k configure
+
+# Restart terminal
+
+source ~/.zshrc
