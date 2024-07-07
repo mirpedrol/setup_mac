@@ -1,18 +1,11 @@
 #!/usr/bin/env bash
 
-# Configure bash profile
-cd ~
-touch .bash_profile
-echo "source ~/.bash_prompt" >> .bash_profile
-echo "source ~/.aliases" >> .bash_profile
+# Install miniconda
 
-# Configure bash prompt
-touch .bash_prompt
-echo '#!/usr/bin/env bash' >> .bash_prompt
-echo "export CLICOLOR=1" >> .bash_prompt
-echo "export LSCOLORS=ExFxBxDxCxegedabagacad" >> .bash_prompt
-echo "# TERMINAL PROMPT" >> .bash_prompt
-echo 'PS1="\[\e[0;93m\]\u\[\e[m\]"    # username' >> .bash_prompt
-echo "export PS1;" >> .bash_prompt
-
-# Install conda
+mkdir -p ~/Installed/miniconda3
+curl https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh -o ~/Installed/miniconda3/miniconda.sh
+bash ~/Installed/miniconda3/miniconda.sh -b -u -p ~/Installed/miniconda3
+rm -rf ~/Installed/miniconda3/miniconda.sh
+# Init
+~/Installed/miniconda3/bin/conda init bash
+~/Installed/miniconda3/bin/conda init zsh
