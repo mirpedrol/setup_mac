@@ -9,3 +9,4 @@ rm -rf ~/Installed/miniconda3/miniconda.sh
 # Init
 ~/Installed/miniconda3/bin/conda init bash
 ~/Installed/miniconda3/bin/conda init zsh
+
